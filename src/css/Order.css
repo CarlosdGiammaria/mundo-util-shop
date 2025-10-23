@@ -1,0 +1,92 @@
+.orders-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: "Poppins", sans-serif;
+}
+
+.orders-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.orders-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #4e8cff;
+  border-radius: 2px;
+  margin: 0.5rem auto;
+}
+
+.no-orders {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #777;
+  padding: 2rem 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.orders-table thead {
+  background: #4e8cff;
+  color: white;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.orders-table tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s ease;
+}
+
+.orders-table tbody tr:hover {
+  background: #f8faff;
+}
+
+.orders-table td {
+  color: #444;
+}
+
+.orders-table .price {
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+@media (max-width: 768px) {
+  .orders-container {
+    padding: 1rem;
+  }
+
+  .orders-table th,
+  .orders-table td {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .orders-title {
+    font-size: 1.5rem;
+  }
+}

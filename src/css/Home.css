@@ -1,0 +1,105 @@
+.home-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #1e293b;
+}
+.prin{ 
+  display: flex; 
+  flex-direction: row; 
+  align-items: baseline;
+}
+
+.home-logo {
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease;
+}
+
+.home-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Título principal */
+.home-title {
+  font-size: 3.2rem;
+  color: #4e39c2;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+  text-shadow: 1px 2px 6px rgba(29, 78, 216, 0.15);
+}
+
+/* Subtítulo con mejor contraste */
+.home-subtitle {
+  font-size: 1.25rem;
+  color: #475569;
+  margin-bottom: 50px;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+/* Tarjetas de sección */
+.home-section {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 35px;
+  max-width: 950px;
+  width: 100%;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 25px rgba(30, 64, 175, 0.08);
+  transition: all 0.3s ease;
+  text-align: justify;
+}
+
+.home-section:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(30, 64, 175, 0.15);
+}
+
+/* Título de sección */
+.section-title {
+  color: #1e40af;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Texto de sección */
+.section-text {
+  color: #334155;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+/* Botón principal */
+.home-button {
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  color: white;
+  padding: 14px 36px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 30px;
+  box-shadow: 0 6px 18px rgba(29, 78, 216, 0.3);
+  transition: all 0.25s ease;
+}
+
+.home-button:hover {
+  background: linear-gradient(90deg, #1e40af, #1d4ed8);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(29, 78, 216, 0.35);
+}
