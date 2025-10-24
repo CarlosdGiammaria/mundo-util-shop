@@ -1,11 +1,11 @@
 /* 🎨 Fondo general */
 .create-product-page {
   width: 100%;
-  height: 98vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 7px;
   background: linear-gradient(135deg, #003d5c, #006b8f, #0093b8);
   font-family: "Poppins", sans-serif;
 }

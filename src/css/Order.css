@@ -42,7 +42,7 @@
 .orders-table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 800px;
+  min-width: 850px;
 }
 
 .orders-table thead {
@@ -68,11 +68,50 @@
 
 .orders-table td {
   color: #444;
+  vertical-align: top;
 }
 
 .orders-table .price {
   font-weight: 600;
   color: #2e7d32;
+}
+
+.btn-details {
+  background: #4e8cff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.2s ease;
+}
+
+.btn-details:hover {
+  background: #3a70db;
+}
+
+.products-row {
+  background: #f9fbff;
+}
+
+.inner-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+.inner-table th,
+.inner-table td {
+  border: 1px solid #e0e0e0;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+}
+
+.inner-table th {
+  background: #eef3ff;
+  color: #333;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
@@ -88,5 +127,10 @@
 
   .orders-title {
     font-size: 1.5rem;
+  }
+
+  .btn-details {
+    font-size: 0.8rem;
+    padding: 4px 8px;
   }
 }

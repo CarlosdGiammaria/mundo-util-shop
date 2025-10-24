@@ -1,9 +1,22 @@
 export interface Product {
   id: number;
   name: string;
-  materials:string;
+  materials?: string;
   price: number;
   image?: string;
+}
+
+export interface CartItem extends Product {
+  quantity: number;
+  subtotal: number;
+}
+
+export interface CartContextType {
+  cart: CartItem[];
+  addToCart: (product: Product) => void;
+  decreaseQuantity: (productId: number) => void;
+  removeFromCart: (productId: number) => void;
+  clearCart: () => void;
 }
 
 export interface Order {
@@ -13,16 +26,8 @@ export interface Order {
   phone: string;
   address: string;
   paymentMethod: string;
-  observations:string;
-  items: Product[];
+  observations?: string;
+  items: CartItem[];
   total: number;
-  date: string; // ✅ importante
-}
-
-
-export interface CartContextType {
-  cart: Product[];
-  addToCart: (product: Product) => void;
-  removeFromCart: (productId: number) => void;
-  clearCart: () => void;
+  date: string;
 }
